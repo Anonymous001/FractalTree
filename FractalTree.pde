@@ -28,5 +28,13 @@ public void drawBranches(int x,int y, double branchLength, double angle)
   if(branchLength>smallestBranch){
   drawBranches(endX1,endY1,branchLength,angle1);
   drawBranches(endX2,endY2,branchLength,angle2);
+ }
 }
+public void keyPressed(){
+  if(key == 'd'){branchAngle+=0.05;}   
+  if(key == 'a'){branchAngle-=0.05;}
+  if(key == 'w' && fractionLength<0.8){fractionLength+=0.05;}   
+  if(key == 's' && fractionLength>0.05){fractionLength-=0.05;}
+  if(keyCode == UP && smallestBranch<7){smallestBranch+=0.1;}
+  if(keyCode == DOWN && smallestBranch>3){smallestBranch-=0.1;}
 }
