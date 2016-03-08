@@ -19,6 +19,7 @@ public void draw()
   if(key == 's' && fractionLength>0.05){fractionLength-=0.05;}
   if(keyCode == UP && smallestBranch<7){smallestBranch+=0.1;}
   if(keyCode == DOWN && smallestBranch>3){smallestBranch-=0.1;}
+  }
 }
 
 } 
